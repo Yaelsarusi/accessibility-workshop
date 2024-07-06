@@ -32,9 +32,9 @@ const FAQs = () => (
     <SectionWrapper id="faqs">
         <div className="custom-screen text-gray-300">
             <div className="max-w-xl text-center xl:mx-auto">
-                <p className="text-gray-50 text-3xl font-extrabold sm:text-4xl">
+                <h2 className="text-gray-50 text-3xl font-extrabold sm:text-4xl">
                     Everything you need to know
-                </p>
+                </h2>
                 <p className="mt-3">
                     Here are the most questions people always ask about.
                 </p>

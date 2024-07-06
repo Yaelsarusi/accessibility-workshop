@@ -54,9 +54,9 @@ const Testimonial = () => {
         <SectionWrapper>
             <div id="testimonials" className="custom-screen text-gray-300">
                 <div className="max-w-2xl text-center md:mx-auto">
-                    <h1 className="text-gray-50 text-3xl font-semibold sm:text-4xl">
+                    <h2 className="text-gray-50 text-3xl font-semibold sm:text-4xl">
                         Mailgo is loved by the best founders around the world
-                    </h1>
+                    </h2>
                 </div>
                 <GradientWrapper wrapperClassName="max-w-sm h-40 top-12 inset-x-0" className="mt-12">
                     <LayoutEffect
@@ -83,7 +83,7 @@ const Testimonial = () => {
                                             <div className="flex items-center gap-x-4">
                                                 <Image
                                                     src={item.avatar}
-                                                    alt=""
+                                                    alt={`Image of ${item.name}`}
                                                     className="w-14 h-14 rounded-full object-cover"
                                                 />
                                                 <div>

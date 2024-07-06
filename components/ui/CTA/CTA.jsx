@@ -5,7 +5,7 @@ import bgPattern from "@/public/images/bg-pattern.webp"
 import LayoutEffect from "@/components/LayoutEffect"
 
 const CTA = () => (
-    <>
+    <section>
         <GradientWrapper wrapperClassName="max-w-xs h-[13rem] top-12 inset-0">
             <div className="custom-screen py-28 relative">
                 <LayoutEffect
@@ -17,9 +17,9 @@ const CTA = () => (
                 >
                     <div className="relative z-10">
                         <div className="max-w-xl mx-auto text-center">
-                            <p className="text-gray-50 text-3xl font-semibold sm:text-4xl">
+                            <h2 className="text-gray-50 text-3xl font-semibold sm:text-4xl">
                                 Unleash the Power of AI with Email Marketing
-                            </p>
+                            </h2>
                             <p className="mt-5 text-gray-300">
                                 Mailgo is the perfect answer! Our AI-based email marketing platform enables you to create highly targeted email campaigns that are tailored to each individual subscriber.
                             </p>
@@ -40,11 +40,11 @@ const CTA = () => (
                 <Image
                     src={bgPattern}
                     className="w-full h-full object-cover m-auto absolute inset-0 pointer-events-none"
-                    alt=""
+                    alt="" // is purely decorative, should be empty
                 />
             </div>
         </GradientWrapper>
-    </>
+    </section>
 )
 
 export default CTA

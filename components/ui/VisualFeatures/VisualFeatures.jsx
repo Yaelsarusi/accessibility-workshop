@@ -9,21 +9,23 @@ const VisualFeatures = () => {
         {
             title: "Send thousands of emails",
             desc: "Send thousands of emails quickly and easily. You can customize the content of each email",
-            img: Feature1
+            img: Feature1,
+            imgAlt: "Mailgo interface showing the 'Sender' section for sending multiple emails at once, with buttons for 'Add more' and 'Export as CSV'."
         },
         {
             title: "Write your email content using AI",
             desc: "AI-powered email content writing is the perfect solution for busy professionals who need to quickly create engaging emails.",
-            img: Feature2
+            img: Feature2,
+            imgAlt: "Mailgo interface showing a welcome message with text formatting options such as bold, italic, underline, font size, alignment, and insert link or image icons."
         },
     ]
     return (
         <SectionWrapper>
             <div className="custom-screen text-gray-300">
                 <div className="max-w-xl mx-auto text-center">
-                    <h1 className="text-gray-50 text-3xl font-semibold sm:text-4xl">
+                    <h2 className="text-gray-50 text-3xl font-semibold sm:text-4xl">
                         Take your email marketing to the next level with Mailgo
-                    </h1>
+                    </h2>
                     <p className="mt-3">
                         With Mailgo's powerful features, you can easily create and send beautiful emails that will engage your customers and drive more sales.
                     </p>
@@ -37,21 +39,23 @@ const VisualFeatures = () => {
                                         background: "radial-gradient(141.61% 141.61% at 29.14% -11.49%, rgba(203, 213, 225, 0.15) 0%, rgba(203, 213, 225, 0) 57.72%)"
                                     }}
                                 >
-                                    <div className="p-8">
-                                        <h1 className="text-gray-50 text-xl font-semibold">
-                                            {item.title}
-                                        </h1>
-                                        <p className="mt-3 sm:text-sm md:text-base">
-                                            {item.desc}
-                                        </p>
-                                    </div>
-                                    <div className="pl-8">
-                                        <Image
-                                            src={item.img}
-                                            className="w-full ml-auto"
-                                            alt=""
-                                        />
-                                    </div>
+                                    <article>
+                                        <div className="p-8">
+                                            <h3 className="text-gray-50 text-xl font-semibold">
+                                                {item.title}
+                                            </h3>
+                                            <p className="mt-3 sm:text-sm md:text-base">
+                                                {item.desc}
+                                            </p>
+                                        </div>
+                                        <div className="pl-8">
+                                            <Image
+                                                src={item.img}
+                                                className="w-full ml-auto"
+                                                alt={item.imgAlt}
+                                            />
+                                        </div>
+                                    </article>
                                 </li>
                             ))
                         }

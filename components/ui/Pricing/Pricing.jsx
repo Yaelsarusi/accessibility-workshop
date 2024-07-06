@@ -55,9 +55,9 @@ const Pricing = () => {
     return (
         <SectionWrapper id="pricing" className='custom-screen'>
             <div className='relative max-w-xl mx-auto text-center'>
-                <h1 className='text-gray-50 text-3xl font-semibold sm:text-4xl'>
+                <h2 className='text-gray-50 text-3xl font-semibold sm:text-4xl'>
                     Find a plan to power your business
-                </h1>
+                </h2>
             </div>
             <LayoutEffect
                 className="duration-1000 delay-300"
@@ -69,7 +69,7 @@ const Pricing = () => {
                 <div className='mt-16 justify-center gap-6 sm:grid sm:grid-cols-2 sm:space-y-0 lg:grid-cols-3'>
                     {
                         plans.map((item, idx) => (
-                            <div key={idx} className={`relative flex-1 flex items-stretch flex-col rounded-xl border border-gray-800 mt-6 sm:mt-0 ${item.isMostPop ? "border border-purple-500" : ""}`}
+                            <article key={idx} className={`relative flex-1 flex items-stretch flex-col rounded-xl border border-gray-800 mt-6 sm:mt-0 ${item.isMostPop ? "border border-purple-500" : ""}`}
                                 style={{
                                     backgroundImage: item.isMostPop ? mostPopPricingBg : ""
                                 }}
@@ -91,6 +91,7 @@ const Pricing = () => {
                                             item.features.map((featureItem, idx) => (
                                                 <li key={idx} className='flex items-center gap-5 text-gray-300'>
                                                     <svg
+                                                        aria-hidden="true"
                                                         xmlns='http://www.w3.org/2000/svg'
                                                         className='h-5 w-5 text-indigo-600'
                                                         viewBox='0 0 20 20'
@@ -111,7 +112,7 @@ const Pricing = () => {
                                         </Button>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
                         ))
                     }
                 </div>

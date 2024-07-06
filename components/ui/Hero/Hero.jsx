@@ -5,7 +5,7 @@ import HeroImg from "@/public/images/hero.svg"
 import LayoutEffect from "@/components/LayoutEffect"
 
 const Hero = () => (
-    <>
+    <section>
         <div className="custom-screen py-28">
             <LayoutEffect className="duration-1000 delay-300"
                 isInviewState={{
@@ -22,7 +22,7 @@ const Hero = () => (
                         >
                             Manage your email marketing using AI
                         </h1>
-                        <p className="max-w-xl mx-auto text-gray-300 text-[14px]">
+                        <p className="max-w-xl mx-auto text-gray-300">
                             Gain control of your business's growth with Mailgo's comprehensive marketing, automation, and email marketing platform.
                         </p>
                         <div className="flex justify-center font-medium text-sm">
@@ -41,13 +41,13 @@ const Hero = () => (
                         <Image
                             src={HeroImg}
                             className="shadow-lg rounded-2xl"
-                            alt=""
+                            alt="Screenshot of a the web application Mailgo that manages subscribers"
                         />
                     </GradientWrapper>
                 </div>
             </LayoutEffect>
         </div>
-    </>
+    </section>
 )
 
 export default Hero

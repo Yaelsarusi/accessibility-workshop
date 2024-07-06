@@ -7,7 +7,7 @@ const NavHeader = ({ onClick, state, menuBtnEl }) => (
             <Brand />
         </Link>
         <div className="md:hidden">
-            <button role="button" ref={menuBtnEl || null} className="text-gray-400 hover:text-gray-50"
+            <button role="button" aria-label="Open the menu" ref={menuBtnEl || null} className="text-gray-400 hover:text-gray-50"
                 onClick={onClick}
             >
                 {
