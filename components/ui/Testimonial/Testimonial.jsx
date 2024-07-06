@@ -74,12 +74,12 @@ const Testimonial = () => {
                                             backgroundImage: "radial-gradient(100% 100% at 50% 50%, rgba(124, 58, 237, 0.05) 0%, rgba(124, 58, 237, 0) 100%)"
                                         }}
                                     >
-                                        <div className="flex flex-col justify-between gap-y-6 h-full">
-                                            <div className="">
+                                        <figure className="flex flex-col justify-between gap-y-6 h-full">
+                                            <blockquote className="">
                                                 <p className="">
                                                     {item.quote}
                                                 </p>
-                                            </div>
+                                            </blockquote>
                                             <div className="flex items-center gap-x-4">
                                                 <Image
                                                     src={item.avatar}
@@ -91,7 +91,7 @@ const Testimonial = () => {
                                                     <span className="block text-sm mt-0.5">{item.title}</span>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </figure>
                                     </li>
                                 ))
                             }
