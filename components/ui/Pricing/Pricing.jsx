@@ -68,16 +68,16 @@ const Pricing = () => {
             >
                 <div className='mt-16 justify-center gap-6 sm:grid sm:grid-cols-2 sm:space-y-0 lg:grid-cols-3'>
                     {
-                        plans.map((item, idx) => (
-                            <article key={idx} className={`relative flex-1 flex items-stretch flex-col rounded-xl border border-gray-800 mt-6 sm:mt-0 ${item.isMostPop ? "border border-purple-500" : ""}`}
+                        plans.map((item) => (
+                            <article key={item.name} className={`relative flex-1 flex items-stretch flex-col rounded-xl border border-gray-800 mt-6 sm:mt-0 ${item.isMostPop ? "border border-purple-500" : ""}`}
                                 style={{
                                     backgroundImage: item.isMostPop ? mostPopPricingBg : ""
                                 }}
                             >
                                 <div className="p-8 space-y-4 border-b border-gray-800 text-center">
-                                    <span className='text-purple-600 font-medium'>
+                                    <h1 className='text-purple-600 font-medium'>
                                         {item.name}
-                                    </span>
+                                    </h1>
                                     <div className='text-gray-50 text-3xl font-semibold'>
                                         ${item.price} <span className="text-xl text-gray-400 font-normal">/mo</span>
                                     </div>

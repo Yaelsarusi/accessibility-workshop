@@ -41,9 +41,9 @@ const VisualFeatures = () => {
                                 >
                                     <article>
                                         <div className="p-8">
-                                            <h3 className="text-gray-50 text-xl font-semibold">
+                                            <h1 className="text-gray-50 text-xl font-semibold">
                                                 {item.title}
-                                            </h3>
+                                            </h1>
                                             <p className="mt-3 sm:text-sm md:text-base">
                                                 {item.desc}
                                             </p>

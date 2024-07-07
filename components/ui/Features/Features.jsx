@@ -93,9 +93,9 @@ const Features = () => {
                                             <div aria-hidden="true" className="w-12 h-12 flex items-center justify-center bg-gray-700 rounded-lg text-gray-50">
                                                 {item.icon}
                                             </div>
-                                            <h3 className="text-lg text-gray-50 font-semibold">
+                                            <h1 className="text-lg text-gray-50 font-semibold">
                                                 {item.title}
-                                            </h3>
+                                            </h1>
                                             <p>
                                                 {item.desc}
                                             </p>
